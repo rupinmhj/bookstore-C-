@@ -1,0 +1,28 @@
+@model List<Author>
+<h2>All Authors</h2>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">AuthorId</th>
+      <th scope="col">Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Email</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    @foreach(var author in Model){
+        <tr>
+      <td>@author.Id</td>
+      <td>@author.Name</td>
+      <td>@author.Address</td>
+      <td>@author.Gender</td>
+      <td>@author.Email</td>
+       </tr>
+
+    }
+    </tr>
+  </tbody>
+</table>
+
